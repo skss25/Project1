@@ -2,7 +2,7 @@
 #include<iomanip>
 using namespace std;
 
-int Ext_Euc_Al(int a, int b, int * ps, int * pt);
+int Ext_Euc_Al(int a, int b, int &ps, int &pt);
 
 int main(void)
 {
@@ -13,7 +13,7 @@ int main(void)
 	cout << "두 정수를 입력하십시오: ";
 	cin >> a >> b;
 
-	d = Ext_Euc_Al(a, b, &s, &t);
+	d = Ext_Euc_Al(a, b, s, t);
 
 	cout << "-------------------------------------" << endl;
 	//"최대공약수 gcd(a, b) : a(s) + b(t) = d"
@@ -24,7 +24,7 @@ int main(void)
 	return 0;
 }
 
-int Ext_Euc_Al(int a, int b, int * ps, int * pt)
+int Ext_Euc_Al(int a, int b, int &ps,  int &pt)
 {
 	int r;
 
@@ -72,8 +72,8 @@ int Ext_Euc_Al(int a, int b, int * ps, int * pt)
 			cout.width(4); cout << s1; cout.width(4); cout << s2; cout.width(4); cout << s;
 			cout.width(4); cout << t1; cout.width(4); cout << t2; cout.width(4); cout << t << endl;
 
-			*ps = s1;
-			*pt = t1;
+			ps = s1;
+			pt = t1;
 
 			return a;
 		}
