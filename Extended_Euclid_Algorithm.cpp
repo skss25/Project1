@@ -37,7 +37,7 @@ int Ext_Euc_Al(int a, int b, int &ps,  int &pt)
 	cout.width(4); cout << "s1"; cout.width(4); cout << "s2"; cout.width(4); cout << "s";
 	cout.width(4); cout << "t1"; cout.width(4); cout << "t2"; cout.width(4); cout << "t"<< endl;
 
-	while (1)
+	while (b!=0)
 	{
 		q = a / b;
 		r = a % b;
@@ -60,21 +60,14 @@ int Ext_Euc_Al(int a, int b, int &ps,  int &pt)
 		//t2->t1, t->t2
 		t1 = t2;
 		t2 = t;
-
-		if (b == 0) //제수가 0이면 피제수가 최대공약수
-		{
-			q = 0; //0으로 피제수를 나눌경우 에러 발생(예외처리해야할듯)
-			s = s1 - (s2*q); 
-			t = t1 - (t2*q);
-
-			cout << q; cout.width(4); cout << a; cout.width(4); cout << b; cout.width(4); cout << r;
-			cout.width(4); cout << s1; cout.width(4); cout << s2; cout.width(4); cout << s;
-			cout.width(4); cout << t1; cout.width(4); cout << t2; cout.width(4); cout << t << endl;
-
-			ps = s1;
-			pt = t1;
-
-			return a;
-		}
 	}
+	
+	cout.width(5); cout << a; cout.width(4); cout << b;
+	cout.width(8); cout << s1; cout.width(4); cout << s2; cout.width(4);
+	cout.width(8); cout << t1; cout.width(4); cout << t2; cout.width(4); cout<< endl;
+
+	ps = s1;
+	pt = t1;
+
+	return a;
 }
