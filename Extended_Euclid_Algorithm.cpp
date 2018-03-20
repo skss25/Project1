@@ -10,16 +10,16 @@ int main(void)
 	int s = 0, t = 0; //d=(a*s)+(b*t)
 	int d = 0;
 
-	cout << "ë‘ ì •ìˆ˜ë¥¼ ìž…ë ¥í•˜ì‹­ì‹œì˜¤: ";
+	cout << "µÎ Á¤¼ö¸¦ ÀÔ·ÂÇÏ½Ê½Ã¿À: ";
 	cin >> a >> b;
 
 	d = Ext_Euc_Al(a, b, s, t);
 
 	cout << "-------------------------------------" << endl;
-	//"ìµœëŒ€ê³µì•½ìˆ˜ gcd(a, b) : a(s) + b(t) = d"
-	cout << "ìµœëŒ€ê³µì•½ìˆ˜ gcd(a, b) : " << a << "(" << s << ")" << " + ";
+	//"ÃÖ´ë°ø¾à¼ö gcd(a, b) : a(s) + b(t) = d"
+	cout << "ÃÖ´ë°ø¾à¼ö gcd(a, b) : " << a << "(" << s << ")" << " + ";
 	cout << b << "(" << t << ")" << " = " << d << endl; 
-	//s, t : ì •ìˆ˜, ì •ìˆ˜
+	//s, t : Á¤¼ö, Á¤¼ö
 	cout << "s, t : " << s << ", " << t << endl;
 	return 0;
 }
@@ -42,29 +42,28 @@ int Ext_Euc_Al(int a, int b, int &ps,  int &pt)
 		q = a / b;
 		r = a % b;
 
-		cout << q; cout.width(4); cout << a; cout.width(4); cout << b; cout.width(4); cout << r;
-
-		a = b;
-		b = r;
-		//(a,b) -> (b,r)
-
-		//sê°’ êµ¬í•˜ê¸°
-		//tê°’ êµ¬í•˜ê¸°
+		//s, t°ª ±¸ÇÏ±â
 		s = s1 - (s2*q);
 		t = t1 - (t2*q);
-		
+
+		cout << q; cout.width(4); cout << a; cout.width(4); cout << b; cout.width(4); cout << r;
 		cout.width(4); cout << s1; cout.width(4); cout << s2; cout.width(4); cout << s;
 		cout.width(4); cout << t1; cout.width(4); cout << t2; cout.width(4); cout << t << endl;
 
+		//(a,b) -> (b,r)
+		a = b;
+		b = r;
+
+		//s2->s1, s->s2
 		s1 = s2;
 		s2 = s;
-
+		//t2->t1, t->t2
 		t1 = t2;
 		t2 = t;
 
-		if (b == 0) //ì œìˆ˜ê°€ 0ì´ë©´ í”¼ì œìˆ˜ê°€ ìµœëŒ€ê³µì•½ìˆ˜
+		if (b == 0) //Á¦¼ö°¡ 0ÀÌ¸é ÇÇÁ¦¼ö°¡ ÃÖ´ë°ø¾à¼ö
 		{
-			q = 0; //0ìœ¼ë¡œ í”¼ì œìˆ˜ë¥¼ ë‚˜ëˆŒê²½ìš° ì—ëŸ¬ ë°œìƒ(ì˜ˆì™¸ì²˜ë¦¬í•´ì•¼í• ë“¯)
+			q = 0; //0À¸·Î ÇÇÁ¦¼ö¸¦ ³ª´­°æ¿ì ¿¡·¯ ¹ß»ý(¿¹¿ÜÃ³¸®ÇØ¾ßÇÒµí)
 			s = s1 - (s2*q); 
 			t = t1 - (t2*q);
 
