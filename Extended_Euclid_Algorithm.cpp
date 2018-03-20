@@ -33,39 +33,16 @@ int Ext_Euc_Al(int a, int b, int * ps, int * pt)
 	int t, t1 = 0, t2 = 1;
 
 	cout << "q";
-	cout.width(4);
-	cout << "a";
-	cout.width(4);
-	cout << "b";
-	cout.width(4);
-	cout << "r";
-
-	cout.width(4);
-	cout << "s1";
-	cout.width(4);
-	cout << "s2";
-	cout.width(4);
-	cout << "s";
-
-	cout.width(4);
-	cout << "t1";
-	cout.width(4);
-	cout << "t2";
-	cout.width(4);
-	cout << "t"<< endl;
+	cout.width(4); cout << "a";  cout.width(4); cout << "b"; cout.width(4); cout << "r";
+	cout.width(4); cout << "s1"; cout.width(4); cout << "s2"; cout.width(4); cout << "s";
+	cout.width(4); cout << "t1"; cout.width(4); cout << "t2"; cout.width(4); cout << "t"<< endl;
 
 	while (1)
 	{
 		q = a / b;
 		r = a % b;
 
-		cout << q;
-		cout.width(4);
-		cout << a;
-		cout.width(4);
-		cout << b;
-		cout.width(4);
-		cout << r;
+		cout << q; cout.width(4); cout << a; cout.width(4); cout << b; cout.width(4); cout << r;
 
 		a = b;
 		b = r;
@@ -75,19 +52,8 @@ int Ext_Euc_Al(int a, int b, int * ps, int * pt)
 		s = s1 - (s2*q);
 		t = t1 - (t2*q);
 		
-		cout.width(4);
-		cout << s1;
-		cout.width(4);
-		cout << s2;
-		cout.width(4);
-		cout << s;
-
-		cout.width(4);
-		cout << t1;
-		cout.width(4);
-		cout << t2;
-		cout.width(4);
-		cout << t << endl;
+		cout.width(4); cout << s1; cout.width(4); cout << s2; cout.width(4); cout << s;
+		cout.width(4); cout << t1; cout.width(4); cout << t2; cout.width(4); cout << t << endl;
 
 		s1 = s2;
 		s2 = s;
@@ -102,27 +68,9 @@ int Ext_Euc_Al(int a, int b, int * ps, int * pt)
 			s = s1 - (s2*q); 
 			t = t1 - (t2*q);
 
-			cout << q;
-			cout.width(4);
-			cout << a;
-			cout.width(4);
-			cout << b;
-			cout.width(4);
-			cout << r;
-
-			cout.width(4);
-			cout << s1;
-			cout.width(4);
-			cout << s2;
-			cout.width(4);
-			cout << s;
-
-			cout.width(4);
-			cout << t1;
-			cout.width(4);
-			cout << t2;
-			cout.width(4);
-			cout << t << endl;
+			cout << q; cout.width(4); cout << a; cout.width(4); cout << b; cout.width(4); cout << r;
+			cout.width(4); cout << s1; cout.width(4); cout << s2; cout.width(4); cout << s;
+			cout.width(4); cout << t1; cout.width(4); cout << t2; cout.width(4); cout << t << endl;
 
 			*ps = s1;
 			*pt = t1;
