@@ -1,10 +1,19 @@
 #pragma once
+#ifndef NUMBER_THEORY_H
+#define NUMBER_THEORY_H
 typedef int DATA;
+typedef int * PDATA;
 
-void InputTwoData(DATA & n1, DATA & n2);
+void InputData(PDATA * data, int n);
 
-void divisor_multiple(int num1, int num2);//약수와 배수 성립되는지 여부
-void get_gcd(int nume1, int num2);// 최대공약수 노가다방법
+bool Divisor_Multiple(int num1, int num2);//약수와 배수 성립되는지 여부
+void Get_Gcd(int nume1, int num2);// 최대공약수 노가다방법
 
-void Euclid_Algorithm(int a, int b);//유클리드 알고리즘
-void Ext_Euc_Algorithm(int a, int b); //확장된 유클리드 알고리즘
+int Euclid_Algorithm(int a, int b);//유클리드 알고리즘
+int Ext_Euc_Algorithm(int a, int b, int &sValue, int &tValue);//확장된 유클리드 알고리즘ㄴ
+
+//선형 디오판투스 방정식에서 해를 구하기
+#define EXP_LEN 12
+bool Diophantus(int a, int b, int c);
+
+#endif
