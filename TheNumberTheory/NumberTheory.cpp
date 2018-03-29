@@ -2,20 +2,20 @@
 #include"NumberTheory.h"
 using namespace std;
 
-void ProjectInterface(void) //ÇÁ·ÎÁ§Æ® ¾Û ¸ñ·Ï 
+void ProjectInterface(void) //í”„ë¡œì íŠ¸ ì•± ëª©ë¡ 
 {
 	int choice;
 
 	while (1)
 	{
-		cout << "**********Á¤¼ö·Ğ ÇÁ·ÎÁ§Æ®**********" << endl;
-		cout << "1. Á¤¼ö" << endl;
-		cout << "2. ÇÕµ¿½Ä" << endl;
-		cout << "3. ÇÕµ¿½Ä°ú ¾ÏÈ£" << endl;
-		cout << "4. Æä¸£¸¶¿Í ¿ÀÀÏ·¯ Á¤¸®" << endl;
-		cout << "5. ¿ø½Ã±Ù" << endl;
-		cout << "6. ÀÌÂ÷À×¿©" << endl;
-		cout << "0. È­¸é Áö¿ì±â" << endl;
+		cout << "**********ì •ìˆ˜ë¡  í”„ë¡œì íŠ¸**********" << endl;
+		cout << "1. ì •ìˆ˜" << endl;
+		cout << "2. í•©ë™ì‹" << endl;
+		cout << "3. í•©ë™ì‹ê³¼ ì•”í˜¸" << endl;
+		cout << "4. í˜ë¥´ë§ˆì™€ ì˜¤ì¼ëŸ¬ ì •ë¦¬" << endl;
+		cout << "5. ì›ì‹œê·¼" << endl;
+		cout << "6. ì´ì°¨ì‰ì—¬" << endl;
+		cout << "0. í™”ë©´ ì§€ìš°ê¸°" << endl;
 		cout << "(Enter the number, -1, to exit the program)" << endl;
 		cout << ">> ";
 		cin >> choice;
@@ -27,19 +27,19 @@ void ProjectInterface(void) //ÇÁ·ÎÁ§Æ® ¾Û ¸ñ·Ï
 			IntegerContents();
 			break;
 		case 2:
-			cout << "ÁØºñÁß.. " << endl << endl;
+			cout << "ì¤€ë¹„ì¤‘.. " << endl << endl;
 			break;
 		case 3:
-			cout << "ÁØºñÁß.. " << endl << endl;
+			cout << "ì¤€ë¹„ì¤‘.. " << endl << endl;
 			break;
 		case 4:
-			cout << "ÁØºñÁß.. " << endl << endl;
+			cout << "ì¤€ë¹„ì¤‘.. " << endl << endl;
 			break;
 		case 5:
-			cout << "ÁØºñÁß.. " << endl << endl;
+			cout << "ì¤€ë¹„ì¤‘.. " << endl << endl;
 			break;
 		case 6:
-			cout << "ÁØºñÁß.. " << endl << endl;
+			cout << "ì¤€ë¹„ì¤‘.. " << endl << endl;
 			break;
 		case 0:
 			system("cls");
@@ -55,18 +55,18 @@ void ProjectInterface(void) //ÇÁ·ÎÁ§Æ® ¾Û ¸ñ·Ï
 void IntegerContents(void)
 {
 	int choice;
-	PDATA data = NULL; //ÀÔ·Â°ª ¹è¿­
+	PDATA data = NULL; //ì…ë ¥ê°’ ë°°ì—´
 	int s, t;
 
 	while (1)
 	{
-		cout << "**********Á¤¼ö·Ğ ÇÁ·ÎÁ§Æ®**********"				<< endl;
-		cout << "1. À¯Å¬¸®µå ¾Ë°í¸®Áò"								<< endl;
-		cout << "2. ¾à¼ö¿Í ¹è¼ö ¼º¸³µÇ´ÂÁö ÆÇ´Ü"					<< endl;
-		cout << "3. ÃÖ´ë°ø¾à¼ö ¾Ë°í¸®Áò"							<< endl;
-		cout << "4. È®ÀåµÈ À¯Å¬¸®µå ¾Ë°í¸®Áò"						<< endl;
-		cout << "5. ¼±Çü µğ¿ÀÆÇÅõ½º ¹æÁ¤½Ä ±¸ÇÏ±â"					<< endl;
-		cout << "0. È­¸é Áö¿ì±â"									<< endl;
+		cout << "**********ì •ìˆ˜ë¡  í”„ë¡œì íŠ¸**********"				<< endl;
+		cout << "1. ìœ í´ë¦¬ë“œ ì•Œê³ ë¦¬ì¦˜"								<< endl;
+		cout << "2. ì•½ìˆ˜ì™€ ë°°ìˆ˜ ì„±ë¦½ë˜ëŠ”ì§€ íŒë‹¨"					<< endl;
+		cout << "3. ìµœëŒ€ê³µì•½ìˆ˜ ì•Œê³ ë¦¬ì¦˜"							<< endl;
+		cout << "4. í™•ì¥ëœ ìœ í´ë¦¬ë“œ ì•Œê³ ë¦¬ì¦˜"						<< endl;
+		cout << "5. ì„ í˜• ë””ì˜¤íŒíˆ¬ìŠ¤ ë°©ì •ì‹ êµ¬í•˜ê¸°"					<< endl;
+		cout << "0. í™”ë©´ ì§€ìš°ê¸°"									<< endl;
 		cout << "(Enter the number, -1, to move to Main Interface)" << endl;
 		cout << ">> ";
 		cin >> choice;
@@ -100,7 +100,7 @@ void IntegerContents(void)
 			system("cls");
 			return;
 		default:
-			cout << "Àß¸øµÈ ÀÔ·ÂÀÔ´Ï´Ù." << endl << endl;
+			cout << "ì˜ëª»ëœ ì…ë ¥ì…ë‹ˆë‹¤." << endl << endl;
 		}
 	}
 }
@@ -110,7 +110,7 @@ void InputData(PDATA* data, int n)
 	int temp = 0;
 	*data = new DATA[n];
 	
-	cout << "ÀÔ·Â: ";
+	cout << "ì…ë ¥: ";
 	for (int i = 0; i < n; i++) {
 		cin >> (*data)[i];
 	}
@@ -124,7 +124,7 @@ void InputData(PDATA* data, int n)
 		}
 	}
 }
-//Á¤¼ö
+//ì •ìˆ˜
 int Euclid_Algorithm(int a, int b)
 {
 	int r;
@@ -148,11 +148,11 @@ int Euclid_Algorithm(int a, int b)
 bool Divisor_Multiple(int num1, int num2)
 {
 	if (num1 % num2 == 0) {
-		cout << "-¾à¼ö¿Í ¹è¼öÀÇ °ü°è°¡ ¼º¸³-" << endl << endl;
+		cout << "-ì•½ìˆ˜ì™€ ë°°ìˆ˜ì˜ ê´€ê³„ê°€ ì„±ë¦½-" << endl << endl;
 		return true;
 	}
 	else {
-		cout << "-¾à¼ö¿Í ¹è¼öÀÇ °ü°è°¡ ¼º¸³µÇÁö ¾ÊÀ½-" << endl << endl;
+		cout << "-ì•½ìˆ˜ì™€ ë°°ìˆ˜ì˜ ê´€ê³„ê°€ ì„±ë¦½ë˜ì§€ ì•ŠìŒ-" << endl << endl;
 		return false;
 	}
 }
@@ -175,7 +175,7 @@ void Get_Gcd(int num1, int num2)
 		}
 		cout << "(" << num1 << ", " << num2 << ")" << endl;
 	}
-	cout << "ÃÖ´ë°ø¾à¼ö´Â " << num1 << "ÀÔ´Ï´Ù." << endl << endl;
+	cout << "ìµœëŒ€ê³µì•½ìˆ˜ëŠ” " << num1 << "ì…ë‹ˆë‹¤." << endl << endl;
 }
 
 int Exp_Euc_Algorithm(int a, int b, int &sValue, int &tValue)
@@ -196,7 +196,7 @@ int Exp_Euc_Algorithm(int a, int b, int &sValue, int &tValue)
 		q = a / b;
 		r = a % b;
 
-		//s, t°ª ±¸ÇÏ±â
+		//s, tê°’ êµ¬í•˜ê¸°
 		s = s1 - (s2*q);
 		t = t1 - (t2*q);
 
@@ -222,10 +222,10 @@ int Exp_Euc_Algorithm(int a, int b, int &sValue, int &tValue)
 
 
 	cout << "--------------------------------------" << endl;
-	//"ÃÖ´ë°ø¾à¼ö gcd(a, b) : a(s) + b(t) = d"
-	cout << "ÃÖ´ë°ø¾à¼ö gcd(a, b) : " << A << "(" << s1 << ")" << " + ";
+	//"ìµœëŒ€ê³µì•½ìˆ˜ gcd(a, b) : a(s) + b(t) = d"
+	cout << "ìµœëŒ€ê³µì•½ìˆ˜ gcd(a, b) : " << A << "(" << s1 << ")" << " + ";
 	cout << B << "(" << t1 << ")" << " = " << a << endl;
-	//s, t : Á¤¼ö, Á¤¼ö
+	//s, t : ì •ìˆ˜, ì •ìˆ˜
 	cout << "s, t : " << s1 << ", " << t1 << endl<<endl;
 
 	sValue = s1;
@@ -236,15 +236,15 @@ int Exp_Euc_Algorithm(int a, int b, int &sValue, int &tValue)
 bool Diophantus(int a, int b, int c)
 {
 	char * exp = new char[EXP_LEN];
-	char * InitExp = new char[EXP_LEN]; //ÃÊ±â¹æÁ¤½Ä
+	char * InitExp = new char[EXP_LEN]; //ì´ˆê¸°ë°©ì •ì‹
 
 	sprintf(exp, "%dx + %dy = %d", a, b, c); strcpy(InitExp, exp);
-	cout << "0. ºÎÁ¤¹æÁ¤½Ä: " << exp << endl << endl;
+	cout << "0. ë¶€ì •ë°©ì •ì‹: " << exp << endl << endl;
 	
-	cout << "1. ÃÖ´ë°ø¾à¼ö(d)¿Í s, t°ªÀ» ±¸ÇÑ´Ù." << endl;
+	cout << "1. ìµœëŒ€ê³µì•½ìˆ˜(d)ì™€ s, tê°’ì„ êµ¬í•œë‹¤." << endl;
 	int d = 0, s, t;
-	d = Ext_Euc_Algorithm(a, b, s, t);
-	cout << "2. " << d << "¿Í " << c << "(ÀÌ)°¡ ¾à¼ö, ¹è¼ö °ü°èÀÎÁö È®ÀÎÇÑ´Ù." << endl;
+	d = Exp_Euc_Algorithm(a, b, s, t);
+	cout << "2. " << d << "ì™€ " << c << "(ì´)ê°€ ì•½ìˆ˜, ë°°ìˆ˜ ê´€ê³„ì¸ì§€ í™•ì¸í•œë‹¤." << endl;
 	if (!Divisor_Multiple(c, d))
 		return false;
 
@@ -256,22 +256,22 @@ bool Diophantus(int a, int b, int c)
 
 	m = c / d;
 	sprintf(exp, "%d(%d * %d) + %d(%d * %d) = %d", a, s, m, b, t, m, d);
-	cout << "3. ÀÏÂ÷°áÇÕ½Ä: " << exp << endl<<endl;
+	cout << "3. ì¼ì°¨ê²°í•©ì‹: " << exp << endl<<endl;
 
 	x0 = (s * m); y0 = (t * m);
 	sprintf(x, "%d + %dk", x0, b / d); sprintf(y, "%d - %dk", y0, a / d);
-	cout << "4. " << InitExp << "ÀÇ ÀÏ¹İÇØ´Â ´ÙÀ½°ú °°´Ù." << endl;
+	cout << "4. " << InitExp << "ì˜ ì¼ë°˜í•´ëŠ” ë‹¤ìŒê³¼ ê°™ë‹¤." << endl;
 	cout << "x = " << x << ", " << "y = " << y << endl << endl;
 
 	return true;
 }
 
-//ÇÕµ¿½Ä
+//í•©ë™ì‹
 PDATA Reduced_Residue_System(int m) 
 {
-	//³ª¸ÓÁö ÁıÇÕ(¿ÏÀüÀ×¿©°è) : À½ÀÇÁ¤¼ö°¡ ¾Æ´Ñ °¡Àå ÀÛÀº ¾çÀÇ Á¤¼ö
+	//ë‚˜ë¨¸ì§€ ì§‘í•©(ì™„ì „ì‰ì—¬ê³„) : ìŒì˜ì •ìˆ˜ê°€ ì•„ë‹Œ ê°€ì¥ ì‘ì€ ì–‘ì˜ ì •ìˆ˜
 	DATA * data = new DATA[m]; 
-	DATA * rrs = NULL; //±â¾àÀ×¿©°è
+	DATA * rrs = NULL; //ê¸°ì•½ì‰ì—¬ê³„
 	int len = 0;
 
 	for (int i = 0; i < m; i++) {
